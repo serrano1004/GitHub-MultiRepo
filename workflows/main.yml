@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v2
+
+      - name: Ejecutar mi acción
+        uses: serrano1004/.github/actions/my-action@main
+        with:
+          mensaje: 'Hola desde mi repositorio externo'
