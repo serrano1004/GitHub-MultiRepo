@@ -9,4 +9,4 @@ jobs:
   call-reusable-workflow:
     uses: serrano1004/.github/.github/workflows/manual.yml@main
     with:
-      username: 'GitHub User'
+      username: 'Simon'
